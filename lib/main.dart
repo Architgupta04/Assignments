@@ -1,8 +1,9 @@
-import 'package:bmi_calc/screens/firstpage.dart';
+
+import 'package:dictionary/screens/homepage.dart';
 import 'package:flutter/material.dart';
 
-void main(){
+void main() {
   runApp(const MaterialApp(
-    home: FirstPage(),
+    home: HomePage(),
   ));
 }
