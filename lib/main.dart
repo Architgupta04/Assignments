@@ -1,9 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/screens/home_page.dart';
+import 'package:musicapp/screens/homePage.dart';
+import 'package:musicapp/screens/homeScreen.dart';
+import 'package:musicapp/screens/loadingScreen.dart';
 
 
-void main(){
+void main() {
   runApp(MaterialApp(
-    home: HomePage(),
+    debugShowCheckedModeBanner: false,
+    // home: const LoadingScreen(),
+    // theme: ThemeData.dark(),
+    initialRoute: '/',
+    routes: {
+      '/': (context) => const LoadingScreen(),
+      '/home': (context) => const HomePage(),
+      '/home2': (context) => const Home(),
+    },
   ));
-}  
+}
